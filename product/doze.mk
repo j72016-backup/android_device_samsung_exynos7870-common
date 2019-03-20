@@ -13,6 +13,6 @@
 # limitations under the License.
 #
 
-# SamsungDoze
+# XiaomiDoze
 PRODUCT_PACKAGES += \
-    SamsungDoze
+    XiaomiDoze
