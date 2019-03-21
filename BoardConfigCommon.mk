@@ -16,6 +16,9 @@
 
 LOCAL_PATH := device/samsung/exynos7870-common
 
+# Permissive
+BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
+
 # Include headers
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/exynos7870-common/include
 
