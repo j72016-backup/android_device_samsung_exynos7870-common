@@ -19,4 +19,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps_debug.conf:system/etc/gps_debug.conf
 
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.0-impl
+	android.hardware.gnss@1.0-impl.hero \
+	android.hardware.gnss@1.0-service \
+	android.hidl.base@1.0 \
+	android.hidl.manager@1.0
