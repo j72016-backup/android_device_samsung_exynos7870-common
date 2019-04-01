@@ -17,7 +17,3 @@
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-hero \
     libbt-vendor
-
-# Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.bt.bdaddr_path="/efs/bluetooth/bt_addr"
