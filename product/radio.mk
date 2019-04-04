@@ -24,10 +24,5 @@ PRODUCT_PACKAGES += \
     libreference-ril \
     libril \
     android.hardware.radio@1.0 \
-    android.hardware.radio.deprecated@1.0
-
-# IPv6
-PRODUCT_PACKAGES += \
-    ebtables \
-    ethertypes \
-    libebtc
+    android.hardware.radio.deprecated@1.0 \
+    Stk
