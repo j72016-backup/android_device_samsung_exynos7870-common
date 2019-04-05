@@ -15,7 +15,5 @@
 
 # Keymaster
 PRODUCT_PACKAGES += \
- 	keystore.exynos7870 \
-    gatekeeper.exynos7870 \
     android.hardware.keymaster@3.0-impl \
     android.hardware.keymaster@3.0-service
