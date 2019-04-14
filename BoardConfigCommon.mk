@@ -16,9 +16,6 @@
 
 LOCAL_PATH := device/samsung/exynos7870-common
 
-# Permissive
-BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
-
 # Ignore Sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
 
