@@ -16,6 +16,9 @@
 
 LOCAL_PATH := device/samsung/exynos7870-common
 
+# Enforcing
+BOARD_KERNEL_CMDLINE := androidboot.selinux=enforcing
+
 # Ignore Sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
 
@@ -25,7 +28,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/samsung/exynos7870-common/include
 TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/bin/mediaserver=24 \
     /system/vendor/bin/hw/rild=27
-    
+
 # Hax
 MALLOC_SVELTE := true
 
