@@ -22,6 +22,7 @@ writev: 1
 fstatat64: 1
 fstatfs64: 1
 fstat64: 1
+set_tid_address: 1
 restart_syscall: 1
 exit: 1
 exit_group: 1
@@ -39,21 +40,14 @@ getgid32: 1
 getegid32: 1
 getgroups32: 1
 nanosleep: 1
-gettimeofday: 1
-seccomp: 1
-# mremap: Ensure |flags| are (MREMAP_MAYMOVE | MREMAP_FIXED) TODO: Once minijail
-# parser support for '<' is in this needs to be modified to also prevent
-# |old_address| and |new_address| from touching the exception vector page, which
-# on ARM is statically loaded at 0xffff 0000. See
-# http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0211h/Babfeega.html
-# for more details.
-#mremap: arg3 == 3
-mremap: 1
+getrandom: 1
+
+# for dynamically loading extractors
+pread64: 1
 
 # for FileSource
 readlinkat: 1
 _llseek: 1
-pread64: 1
 
 # for attaching to debuggerd on process crash
 sigaction: 1
