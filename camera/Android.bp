@@ -20,6 +20,6 @@ cc_library_static {
 		"CameraParameters.cpp",
 	],
 	include_dirs: [
-		"device/samsung/hero-common/include"
+		"device/samsung/exynos7870-common/include"
 	],
 }
