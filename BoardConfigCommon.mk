@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,14 +16,14 @@
 
 LOCAL_PATH := device/samsung/exynos7870-common
 
+# Include path
+TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+
 # Enforcing
 BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
 # Ignore Sepolicy
 SELINUX_IGNORE_NEVERALLOWS := true
-
-# Include headers
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/exynos7870-common/include
 
 TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/bin/mediaserver=24 \
