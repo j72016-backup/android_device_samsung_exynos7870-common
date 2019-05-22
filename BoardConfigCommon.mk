@@ -35,6 +35,9 @@ MALLOC_SVELTE := true
 # SELinux
 BOARD_SEPOLICY_DIRS += device/samsung/exynos7870-common/sepolicy
 
+# SECComp filters
+BOARD_SECCOMP_POLICY += device/samsung/exynos7870-common/seccomp
+
 # Properties
 TARGET_SYSTEM_PROP := $(LOCAL_PATH)/system.prop
 
