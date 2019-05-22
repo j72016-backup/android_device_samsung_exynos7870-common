@@ -19,3 +19,9 @@ TARGET_CAMERA_BOOTTIME_TIMESTAMP := true
 # Camera
 BOARD_USE_SAMSUNG_CAMERAFORMAT_NV21 := true
 TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY := libcamera_parameters_hero
+
+# Shim
+TARGET_LD_SHIM_LIBS += \
+    /system/lib/libcamera_client.so|/vendor/lib/libcamera_client_shim.so \
+    /system/lib/libstagefright.so|/vendor/lib/libstagefright_shim.so \
+    /system/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so
