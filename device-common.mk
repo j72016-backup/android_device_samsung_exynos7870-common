@@ -21,6 +21,9 @@ LOCAL_PATH := device/samsung/exynos7870-common
 ###########################################################
 
 PRODUCT_PACKAGES += \
+        libsamsung_symbols \
+	SamsungServiceMode \
+	Torch \
 	RemovePackages
 
 # Overlays
