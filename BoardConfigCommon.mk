@@ -19,6 +19,16 @@ LOCAL_PATH := device/samsung/exynos7870-common
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
+# Platform
+BOARD_VENDOR := samsung
+TARGET_BOARD_PLATFORM := exynos5
+TARGET_SLSI_VARIANT := bsp
+TARGET_SOC := exynos7870
+TARGET_BOOTLOADER_BOARD_NAME := universal7870
+TARGET_NO_BOOTLOADER := true
+TARGET_NO_RADIOIMAGE := true
+TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000
+
 # Enforcing
 BOARD_KERNEL_CMDLINE := androidboot.selinux=permissive
 
