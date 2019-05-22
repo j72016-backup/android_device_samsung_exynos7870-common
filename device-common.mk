@@ -16,6 +16,13 @@
 
 LOCAL_PATH := device/samsung/exynos7870-common
 
+###########################################################
+### PACKAGES
+###########################################################
+
+PRODUCT_PACKAGES += \
+	RemovePackages
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
