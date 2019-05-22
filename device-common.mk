@@ -16,6 +16,9 @@
 
 LOCAL_PATH := device/samsung/exynos7870-common
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+
 ###########################################################
 ### PACKAGES
 ###########################################################
@@ -26,11 +29,11 @@ PRODUCT_PACKAGES += \
 	Torch \
 	RemovePackages
 
-# Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-
 # Inherit splitted common product configs
 -include $(LOCAL_PATH)/product/*.mk
+
+# System properties
+-include $(LOCAL_PATH)/system_prop.mk
 
 # Call Samsung LSI Board Support Package
 ifneq ($(INCLUDE_EXYNOS_BSP),)
