@@ -39,6 +39,9 @@ TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
     /system/bin/mediaserver=24 \
     /system/vendor/bin/hw/rild=27
 
+# Binder
+TARGET_USES_64_BIT_BINDER := true
+
 # Hax
 MALLOC_SVELTE := true
 
